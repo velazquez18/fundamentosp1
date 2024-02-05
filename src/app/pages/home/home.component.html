@@ -1,0 +1,27 @@
+<h3>Home</h3>
+
+<p>Nombre del alumno: {{ nombre }}</p>
+
+<p>Ahora en mayusculas: {{ nombre | uppercase }}</p>
+
+<p>Calificacion: {{ calificacion }} </p>
+
+<p>Calificacion por 10: {{ calificacion * 10 }} </p>
+
+<!-- input para cambiar el valor de la propiedad nombre -->
+<input type="text" class="form-control" placeholder="Escribe tu nombre" [(ngModel)]="nombre" /> 
+<br>
+<input type="text" class="form-control" placeholder="Escribe la calificacion" [(ngModel)]="calificacion" />
+<br>
+<!-- boton para cambiar valores -->
+<button type="button" class="btn btn-primary" (click)="cambiarValores()"> Cambiar Valores</button>
+<br>
+<!-- Ejemplos de condicionales -->
+<p *ngIf="encendido">La propiedad encendido es verdadera</p>
+<p *ngIf="!encendido">La propiedad encendido es falsa</p>
+<p *ngIf="13 > 7">Es verdadero</p>
+<br><br>
+<!-- ejemplo de ciclo for -->
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let persona of personas"> {{ persona }} </li>
+</ul>
