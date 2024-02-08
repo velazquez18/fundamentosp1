@@ -9,9 +9,9 @@ export class HomeComponent {
 
 
   //propiedades
-  nombre:string = 'Oscar';
-  apellido:string = 'Ramirez';
-  calificacion:number =10;
+  nombre:string = 'Diana';
+  apellido:string = '';
+  calificacion:number =8;
   encendido:boolean = true;
 
   personas:string[] = ["Juan", "Pedro", "Luisa", "Marta"];
@@ -21,7 +21,7 @@ export class HomeComponent {
   //método que cambia el valor de algunas propiedades
   cambiarValores(){
     this.nombre = "Pedro";
-    this.calificacion = 6;
+    this.calificacion = 5;
     this.encendido = false;
   }
 }
